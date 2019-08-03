@@ -1,4 +1,4 @@
-# scrollduration.js
+# scrollduration.js Documentation
 
 ### Include this file:
 ``` html
