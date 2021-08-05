@@ -1,25 +1,15 @@
-// ======================================================
-// scrollduration.js v1.0.0
-//
-// Creative Commons Attribution 4.0 International License
-// https://tobiasroeder.github.io/scrolldurationjs/license
-//
-// https://github.com/tobiasroeder/scrollduration.js
-// Copyright 2019 scrollduration.js
-//
-// ======================================================
+/*
+    scrollduration.js v1.0.1
+    (c) Tobias Roeder
+    tobiasroeder.github.io/scrolldurationjs/license
+*/
 
-function scrollDuration(e) {
-	// variables
-    let clientRect = document.body.getBoundingClientRect(),
-        barColor = '#00bfff',
-        barHeight = '4px';
-
-    // parameter
-    if (e != undefined) {
-        barColor = (e.barColor == undefined ? '#00bfff' : e.barColor);
-        barHeight = (e.height == undefined ? '4px' : e.height);
-    }
+function scrollDuration({
+    barColor = '#00bfff',
+    barHeight = '4px'
+}) {
+    // variables
+    let clientRect = document.body.getBoundingClientRect();
 
     // create all relevant elements
     if (document.querySelector('div[data-sd="progress"]') == null) {
