@@ -29,7 +29,7 @@ window.onscroll = function() {
 
 ---
 
-### Parameter
+### Options
 Parameter | Type | Default
 --|--|--
 barColor | string | #00bfff
